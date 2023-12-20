@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,900;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poopins", sans-serif;
+  background-color: #0a0e21;
+}
+
+.contact {
+  background-color: #0a0e21;
+  display: flex;
+  margin: 5rem 15rem;
+}
+
+.contact .headline {
+  padding: 40px 100px;
+  color: #ffffff;
+}
+
+.contact .headline .tel {
+  margin-top: 250px;
+}
+
+.contact .headline .tel p {
+  font-size: 11px;
+}
+
+.contact .headline .tel p i {
+  color: #3356ff;
+}
+
+.contact .con-2 {
+  background: #b8c1ec;
+  border-radius: 30px;
+  padding: 40px 50px;
+  margin: 5px 40px;
+}
+
+.contact .con-2 .input-data {
+  padding: 10px 10px;
+}
+
+.contact .con-2 .input-data p {
+  font-size: 13px;
+}
+
+.contact .con-2 .input-data input {
+  padding: 5px 10px;
+}
+
+.contact .con-2 .input-data .mm {
+  padding: 30px 10px;
+}
+
+.contact .con-2 .button {
+  color: #ffffff;
+  margin: 10px;
+  padding: 8px 10px;
+  border-radius: 20px;
+  background: #3356ff;
+}
+
+@media screen and (max-width: 769px) {
+  .contact {
+    margin: 2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .con-2 {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .contact {
+    overflow-x: hidden;
+    margin: 1rem 1rem;
+  }
+
+  .contact .con-2 {
+    margin: 5px 22px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .contact {
+    padding: 79px 1px;
+    margin: auto;
+  }
+
+  .contact .con-2 {
+    margin: 5px 6px;
+  }
+
+  .contact .headline {
+    padding: 40px 55px;
+  }
+}
