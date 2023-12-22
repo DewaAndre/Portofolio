@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,900;1,500;1,600;1,700;1,800&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,900;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700");
 
 * {
@@ -535,7 +535,7 @@ h5 {
 
   /* project */
   .portofolio .card-portofolio {
-    margin: 1rem;
+    margin: auto;
   }
 
   .portofolio .card-portofolio .card {
@@ -554,5 +554,22 @@ h5 {
 
   .menu-ft ul li {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 324px){
+  /* banner */
+  .hero .hero-row img {
+    /* height: 23rem; */
+    width: 16rem;
+    /* margin: auto; */
+  }
+  /* project */
+  .portofolio .card-portofolio{
+    margin: auto;
+    width: auto;
+  }
+  .portofolio .card-portofolio .card{
+    width: 15rem;
   }
 }
