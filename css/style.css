@@ -494,7 +494,8 @@ h5 {
 @media screen and (max-width: 376px) {
   /* navbar */
   .navbar-nav {
-    top: 466px;
+    position: fixed;
+    top: 457px;
   }
 
   .navigation {
