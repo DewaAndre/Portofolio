@@ -17,6 +17,7 @@
 }
 
 body {
+  overflow-x: hidden;
   /* background-color: var(--clr); */
 }
 
@@ -24,11 +25,11 @@ body {
 section {
   margin-top: 8rem 0;
 }
-section > h2 {
+section div > h2 {
   text-align: center;
   color: var(--color-primary);
 }
-section > p {
+section div > p {
   text-align: center;
   color: var(--color-light);
 }
@@ -44,10 +45,9 @@ h5 {
 .navbar-nav {
   display: flex;
   align-items: center;
-  margin-top: 536px;
   position: fixed;
   z-index: 1;
-  top: 0px;
+  top: 532px;
   left: 50%;
   right: 50%;
 }
@@ -318,7 +318,7 @@ h5 {
   background-color: #282887;
   border: 1px solid transparent;
   border-radius: 2rem;
-  padding: 3rem 5rem;
+  padding: 3rem 3rem;
   margin: 1rem 4rem;
   transition: 0.3s;
 }
@@ -381,7 +381,7 @@ h5 {
 @media screen and (max-width: 1026px) {
   /* navbar */
   .navbar-nav {
-    margin-top: 458px;
+    top: 447px;
     position: fixed;
   }
 
@@ -397,15 +397,17 @@ h5 {
 @media screen and (max-width: 769px) {
   /* navbar */
   .navbar-nav {
-    margin-top: 440px;
+    top: 440px;
     position: fixed;
   }
+
   /* banner */
   .hero .hero-row img {
     height: 23rem;
     width: 19rem;
     margin: auto;
   }
+  
 
   /* about */
   .about {
@@ -449,13 +451,53 @@ h5 {
   }
 }
 
+@media screen and (max-width: 427px){
+  /* banner */
+  .hero {
+    flex-wrap: wrap;
+  }
+
+  .hero .hero-row {
+    display: grid;
+    margin: 2rem 0;
+  }
+
+  .hero .content {
+    padding: 7.5rem 2rem;
+    order: 1;
+  }
+
+   .hero .content2{
+    margin: auto;
+   }
+
+   /* portofolio */
+   .portofolio .card-portofolio .card {
+    margin: 1rem 1rem;
+  }
+
+  /* skil */
+  .exp-container{
+    display: inline;
+  }
+
+  /* footer */
+  .menu-ft ul {
+    display: inline;
+  }
+
+  .menu-ft ul li {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 376px) {
   /* navbar */
   .navbar-nav {
-    margin-top: 466px;
+    top: 466px;
   }
 
-  .navigation{
+  .navigation {
     width: 339px;
   }
 
@@ -474,11 +516,11 @@ h5 {
     order: 1;
   }
 
-  .hero .hero-row .content h1{
+  .hero .hero-row .content h1 {
     font-size: 18px;
   }
 
-  .hero .hero-row .content p{
+  .hero .hero-row .content p {
     font-size: 13px;
   }
 
@@ -486,17 +528,17 @@ h5 {
     margin: auto;
   }
 
-  .hero .hero-row .content2 img{
+  .hero .hero-row .content2 img {
     height: 19rem;
     margin: auto;
   }
 
   /* project */
-  .portofolio .card-portofolio{
-    margin: 1rem ;
+  .portofolio .card-portofolio {
+    margin: 1rem;
   }
 
-  .portofolio .card-portofolio .card{
+  .portofolio .card-portofolio .card {
     margin: 1rem 1rem;
   }
 
@@ -506,7 +548,7 @@ h5 {
   }
 
   /* footer */
-  .menu-ft ul{
+  .menu-ft ul {
     display: inline;
   }
 
